@@ -18,7 +18,7 @@ def cli(verbose):
 def create_session_cmd(profile_name, temporary_profile_name, duration):
     """Generate a temporary AWS profile with an MFA session that persists for duration"""
     app.create_session(profile_name, temporary_profile_name, duration)
-    print("AWS MFA session tied to profile '{temporary_profile_name}'")
+    print(f"AWS MFA session tied to profile '{temporary_profile_name}'")
 
 
 def main():
